@@ -1,7 +1,12 @@
 <?php
 include('config/app.php');
 include('html/header.php');
-include('./php/fct/item.php');
+include('fct/item.php');
+
+if (!file_exists(FILE_NAME)) {
+  file_put_contents(FILE_NAME,serialize([]));
+}  
+
 ?>
 
         <div class="row">
@@ -11,7 +16,7 @@ include('./php/fct/item.php');
               <!-- /.card-header -->
               <div class="card-body">
                 <!-- Formulaire d'ajout -->
-                <form action="php/addItem.php" method="post">
+                <form action="addItem.php" method="post">
                   <div class="input-group input-group-sm">
                     <input type="text" class="form-control" name="intitule">
                     <span class="input-group-append">
@@ -24,8 +29,8 @@ include('./php/fct/item.php');
                 <ul class="todo-list ui-sortable" data-widget="todo-list">
                   <?php
                   $items = getItems();
-                  foreach($items as $item){
-                    echo displayItem($item);
+                  foreach($items as $key => $item){
+                    echo displayItem($key,$item);
                   }
                   ?>
                 </ul>
