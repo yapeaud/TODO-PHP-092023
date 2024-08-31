@@ -1,1 +1,1 @@
-a:3:{i:0;a:3:{s:2:"id";s:13:"66d2a82a3dd78";s:7:"checked";b:0;s:8:"intitule";s:6:"Item 1";}i:1;a:3:{s:2:"id";s:13:"66d2a84036ede";s:7:"checked";b:0;s:8:"intitule";s:6:"Item 2";}s:0:"";a:1:{s:7:"checked";b:0;}}
+a:3:{s:13:"66d318d2cc350";a:2:{s:7:"checked";b:0;s:8:"intitule";s:6:"item 1";}s:13:"66d318da5b9cf";a:2:{s:7:"checked";b:0;s:8:"intitule";s:6:"item 2";}s:13:"66d318ec8b3da";a:2:{s:7:"checked";b:0;s:8:"intitule";s:6:"item 3";}}
